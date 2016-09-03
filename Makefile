@@ -1,7 +1,7 @@
 DOCKER_CONTAINER=lucida
 VERSION=latest
 
-THREADS=4
+THREADS=1
 
 include ./Makefile.common
 
