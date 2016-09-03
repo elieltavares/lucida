@@ -24,8 +24,8 @@ wget "http://archive.apache.org/dist/thrift/$THRIFT_VERSION/thrift-$THRIFT_VERSI
   && tar xf thrift-$THRIFT_VERSION.tar.gz \
   && cd thrift-$THRIFT_VERSION \
   && ./configure --with-lua=no --with-ruby=no --with-go=no --with-erlang=no --with-nodejs=no \
-  && make -j $THREADS\
-  && sudo make -j $THREADS install \
+  && make -j1\
+  && sudo make -j1 install \
   && cd lib/py/ \
   && sudo python setup.py install \
   && cd ../../lib/java/ \
